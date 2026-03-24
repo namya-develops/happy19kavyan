@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Happy Birthday 🎉</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+/* General */
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+}
+
+.carousel-item img {
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Overlay */
+.carousel-item {
+    position: relative;
+}
+.carousel-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+/* Hero Text */
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    text-align: center;
+}
+
+.glow {
+    font-size: 60px;
+    font-weight: bold;
+    text-shadow: 0 0 20px white;
+}
+
+/* Buttons */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+/* Gallery */
+.gallery img {
+    width: 100%;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.card {
+      background: rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 30px;
+      color: white;
+      margin: 30px auto;
+      max-width: 600px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+.card {
+  cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- 🎬 HERO CAROUSEL -->
+<div id="carouselExample" 
+     class="carousel slide carousel-fade" 
+     data-bs-ride="carousel" 
+     data-bs-interval="2500"
+     data-bs-pause="hover">
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="./WhatsApp Image 2026-03-23 at 14.20.23.jpeg">
+    </div>
+
+    <div class="carousel-item">
+      <img src="./WhatsApp Image 2026-03-23 at 14.20.24.jpeg">
+    </div>
+
+    <div class="carousel-item">
+      <img src="./WhatsApp Image 2026-03-23 at 14.20.25.jpeg">
+    </div>
+
+  </div>
+
+  <!-- Text -->
+  <div class="hero-text">
+    <div class="glow">🎉 Happy Birthday 🎉</div>
+    <h2>Kavyan 💙</h2>
+  </div>
+
+  <!-- Buttons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+<!-- 📸 GALLERY -->
+<div class="section">
+<h1>Memories 📸</h1>
+
+<div class="container">
+<div class="row gallery">
+
+<div class="col-md-4"><img src="./WhatsApp Image 2026-03-23 at 14.20.26 (2).jpeg"></div>
+<div class="col-md-4"><img src="./WhatsApp Image 2026-03-23 at 14.20.27.jpeg"></div>
+<div class="col-md-4"><img src="./WhatsApp Image 2026-03-23 at 14.20.28 (2).jpeg"></div>
+
+</div>
+</div>
+</div>
+
+<div id="message_harsh">
+<div class="card">
+        <h1><center> Message from Harsh </center></h1>
+      <p>
+        Dear Kavyan,<br><br>
+        On your 19th birthday, I just want to remind you how special you are.
+        You’re not just my best friend—you’re my brother, my support system,
+        and my favorite person to laugh with.<br><br>
+
+        Thank you for always being there, for every memory, every joke,
+        and every moment we’ve shared.<br><br>
+
+        I hope this year brings you success, happiness, and everything
+        you dream of. You deserve the best in life! 💫
+      </p>
+    </div>
+</div>
+
+<div id="message_namya">
+<div class="card">
+        <center> <h1> Message from Namya</h1> </center>
+      <p>
+        Dear Kavyan,<br><br>
+        On your 19th birthday, I just want to remind you how special you are.
+        You’re not just my best friend—you’re my brother, my support system,
+        and my favorite person to laugh with.<br><br>
+
+        Thank you for always being there, for every memory, every joke,
+        and every moment we’ve shared.<br><br>
+
+        I hope this year brings you success, happiness, and everything
+        you dream of. You deserve the best in life! 💫
+      </p>
+    </div>
+</div>
+
+<section class="section text-center">
+  <div class="container">
+
+    <img src="special.jpg" class="img-fluid rounded mb-4" style="max-width:500px;">
+
+    <div class="card p-4 mx-auto" style="max-width:600px;">
+      <h3>Our Story 💫</h3>
+      <p>
+        Every moment with you has been unforgettable.
+        From chaos to laughter — everything just feels better with you.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<section class="section text-center">
+  <h1>Hobbies & Interests 🎯</h1>
+
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-3"><div class="card p-3">🎮 Gaming</div></div>
+      <div class="col-md-3"><div class="card p-3">🏏 Cricket</div></div>
+      <div class="col-md-3"><div class="card p-3">🎵 Music</div></div>
+      <div class="col-md-3"><div class="card p-3">🎬 Movies</div></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section text-center">
+  <h1>Profession 💼</h1>
+
+  <div class="container">
+    <div class="card p-4 mx-auto" style="max-width:500px;">
+      <h4>Future Engineer 🚀</h4>
+      <p>Building dreams into reality, one step at a time.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section text-center">
+  <h1>Achievements 🏆</h1>
+
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <img src="ach1.jpg" class="img-fluid rounded">
+        <div class="card p-2 mt-2">Won XYZ Competition</div>
+      </div>
+
+      <div class="col-md-4">
+        <img src="ach2.jpg" class="img-fluid rounded">
+        <div class="card p-2 mt-2">Top Performer</div>
+      </div>
+
+      <div class="col-md-4">
+        <img src="ach3.jpg" class="img-fluid rounded">
+        <div class="card p-2 mt-2">Special Recognition</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section text-center">
+  <h1>Messages from Family 💌</h1>
+
+  <div class="container">
+    <div class="row g-4">
+
+      <div class="col-md-2 mx-3">
+        <div class="card p-3" data-bs-toggle="modal" data-bs-target="#msg1">
+          Mom 🩷
+        </div>
+      </div>
+
+      <div class="col-md-2 mx-3">
+        <div class="card p-3" data-bs-toggle="modal" data-bs-target="#msg2">
+          Dad 💙
+        </div>
+      </div>
+
+      <div class="col-md-2 mx-3">
+        <div class="card p-3" data-bs-toggle="modal" data-bs-target="#msg2">
+          Dada 🙏
+        </div>
+      </div>
+
+      <div class="col-md-2 mx-3">
+        <div class="card p-3" data-bs-toggle="modal" data-bs-target="#msg3">
+          Dadi 🌸
+        </div>
+      </div>
+
+      <div class="col-md-2  mx-3">
+        <div class="card p-3" data-bs-toggle="modal" data-bs-target="#msg4">
+          Dhyanam 😄
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="msg1" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Message from Mom 💙</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>
+          Happy Birthday beta 🎉  
+          You are the greatest blessing in our life.  
+          Stay happy, stay healthy always 💙
+        </p>
+
+        <!-- Optional Image -->
+        <img src="mom.jpg" class="img-fluid rounded mt-3">
+
+        <!-- Optional Audio -->
+        <audio controls class="mt-3 w-100">
+          <source src="mom.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="msg2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Message from Dad 💙</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>
+          Happy Birthday beta 🎉  
+          You are the greatest blessing in our life.  
+          Stay happy, stay healthy always 💙
+        </p>
+
+        <!-- Optional Image -->
+        <img src="mom.jpg" class="img-fluid rounded mt-3">
+
+        <!-- Optional Audio -->
+        <audio controls class="mt-3 w-100">
+          <source src="mom.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="msg3" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Message from Dada 💙</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>
+          Happy Birthday beta 🎉  
+          You are the greatest blessing in our life.  
+          Stay happy, stay healthy always 💙
+        </p>
+
+        <!-- Optional Image -->
+        <img src="mom.jpg" class="img-fluid rounded mt-3">
+
+        <!-- Optional Audio -->
+        <audio controls class="mt-3 w-100">
+          <source src="mom.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="msg4" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Message from Dadi 💙</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>
+          Happy Birthday beta 🎉  
+          You are the greatest blessing in our life.  
+          Stay happy, stay healthy always 💙
+        </p>
+
+        <!-- Optional Image -->
+        <img src="mom.jpg" class="img-fluid rounded mt-3">
+
+        <!-- Optional Audio -->
+        <audio controls class="mt-3 w-100">
+          <source src="mom.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="msg2" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Message from Dhyanam 💙</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+
+        <p>
+          Happy Birthday bhai 🎉  
+          You are the greatest blessing in our life.  
+          Stay happy, stay healthy always 💙
+        </p>
+
+        <!-- Optional Image -->
+        <img src="mom.jpg" class="img-fluid rounded mt-3">
+
+        <!-- Optional Audio -->
+        <audio controls class="mt-3 w-100">
+          <source src="mom.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- 💌 MESSAGE -->
+<div class="section">
+<h1>For You 💌</h1>
+<p style="max-width:600px;margin:auto;">
+Happy Birthday! 🎉  
+You mean a lot to me and I’m really lucky to have you in my life.  
+Thank you for all the memories, laughter and crazy moments.  
+Stay amazing always 💙
+</p>
+</div>
+
+<!-- 🎆 CONFETTI -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+setTimeout(() => {
+  confetti({
+    particleCount: 200,
+    spread: 100,
+    origin: { y: 0.6 }
+  });
+}, 1000);
+</script>
+
+<!-- 🎵 MUSIC -->
+<audio autoplay loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
