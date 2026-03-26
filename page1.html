@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<title>Pattern 1</title>
+
+<style>
+body{
+  background:#000;
+  color:#fff;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  text-align:center;
+  font-family:sans-serif;
+}
+
+/* MAIN BOX */
+.container-box{
+  max-width:650px;
+}
+
+/* 🃏 PATTERN CARD */
+.pattern-card{
+  padding:25px;
+  border-radius:15px;
+  border:1px solid #d4af37;
+  background:rgba(255,215,0,0.05);
+  margin-bottom:30px;
+}
+
+.pattern-card h1{
+  color:#d4af37;
+  margin-bottom:15px;
+}
+
+/* 🎬 SUSPENSE TEXT */
+.suspense{
+  font-size:20px;
+  opacity:0.8;
+  margin-bottom:20px;
+}
+
+/* BUTTON */
+button{
+  font-size: 20px;
+  padding:20px 55px;
+  background:#d4af37;
+  border:none;
+  cursor:pointer;
+}
+
+.page-no {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  font-size: 18px;
+  color: #d4af37; /* gold */
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="container-box">
+
+    <div class="page-no">1 </div>
+
+  <!-- 🃏 PATTERN FIRST -->
+  <div class="pattern-card">
+    <h1>Interesting Patterns - Part 1</h1>
+
+    <p>The dates of Vikrami Calendar and the Gregorian calendar coincides after every 19 Years.</p>
+
+    <p>So Kavyan, today is the exact day when you were born 19 years ago, both date-wise and tithi-wise.</p>
+  </div>
+
+  <!-- 🎬 SUSPENSE BELOW -->
+  <div class="suspense">
+    Something feels magical about today... ✨
+  </div>
+
+  <!-- NEXT -->
+  <button onclick="next()">Next →</button>
+
+</div>
+
+<script>
+function next(){
+  window.location="page2.html";
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+
+<style>
+  
+body{
+  background:black;
+  color:white;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+  text-align:center;
+  font-family: sans-serif;
+}
+
+.fade{
+  animation: fade 3s;
+}
+
+@keyframes fade{
+  from{opacity:0;}
+  to{opacity:1;}
+}
+
+.page-no {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  font-size: 18px;
+  color: #d4af37; /* gold */
+  font-weight: 500;
+  letter-spacing: 1px;
+  z-index: 999;
+}
+
+button{
+  padding:15px 30px;
+  border:none;
+  background:gold;
+  cursor:pointer;
+  font-size:18px;
+}
+
+.pattern-card{
+  padding:25px;
+  border-radius:15px;
+  border:1px solid #d4af37;
+  background:rgba(255,215,0,0.05);
+  margin-bottom:30px;
+}
+
+.pattern-card h1{
+  color:#d4af37;
+  margin-bottom:15px;
+}
+
+.container1 {
+  flex-direction: column;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="page-no">4</div>
+
+<div class="container1">
+<div class="pattern-card">
+    <h1>Interesting Patterns - Part 4</h1>
+
+     <p class="lead">Today is Ram-Navami, the day celebrated as the birthday of MARYADA PURUSHOTTAM RAM in whole world</p>
+
+  </div>
+<div>
+<div class="fade">
+  <h1>Just one more step... 💫</h1>
+  <button onclick="next()">Almost there</button>
+</div>
+</div>
+
+<script>
+function next(){
+  window.location="page5.html";
+}
+</script>
+
+</body>
+</html>
